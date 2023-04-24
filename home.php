@@ -1,3 +1,22 @@
+<?php
+
+session_start();
+
+if (isset($_SESSION["user_id"])) {
+    
+    $mysqli = require __DIR__ . "/database.php";
+    
+    $sql = "SELECT * FROM user
+            WHERE id = {$_SESSION["user_id"]}";
+            
+    $result = $mysqli->query($sql);
+    
+    $user = $result->fetch_assoc();
+}
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,6 +24,20 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>home</title>
+
+   <?php if (isset($user)): ?>
+        
+        <p style="text-align: center; font-size:2rem;">Hello <?= htmlspecialchars($user["name"])?></p>
+        
+        <p class="logout" style="text-align: center; font-size:2rem;"><a href="logout.php">Log out</a></p>
+        
+    <?php else: ?>
+        
+        <p class="Prompt" style="text-align: center; font-size:2rem;"><a href="login.php">Log in</a> or <a href="signup.html">sign up</a></p>
+        
+    <?php endif; ?>
+
+
 
    <!-- swiper css link  -->
    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
@@ -17,7 +50,7 @@
 
 </head>
 <body>
-   
+
 <!-- header section starts  -->
 
 <section class="header">
@@ -281,3 +314,6 @@
 
 </body>
 </html>
+
+
+
