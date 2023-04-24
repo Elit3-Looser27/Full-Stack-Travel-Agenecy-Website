@@ -2,12 +2,22 @@
 # CW1
 The idea for course-work-1 will be a Travel agency webapp.
 It will feature: 
-1. Home page will feature the services provided from the agency, contact info, about us information, and some travel packages you can choose from.
-2. About page will feature the about us information and to choose our agency, and some client reviews.
-3. The packages page will feature a number of packeges that the clinet can choose from.
-4. Booking page will feature the booking fase, the clinet will be prompted to fill in the information required and the submit button that will send the information given to the sql database.
+1. Login and Signup page that take the information given and plug it into the database
+2. Home page will feature the services provided from the agency, contact info, about us information, and some travel packages you can choose from.
+3. About page will feature the about us information and to choose our agency, and some client reviews.
+4. The packages page will feature a number of packeges that the clinet can choose from.
+5. Booking page will feature the booking fase, the clinet will be prompted to fill in the information required and the submit button that will send the information given to the sql database.
 
 Examples of how the webapp will look like is as follows:
+
+
+Signup page:
+
+![image](https://user-images.githubusercontent.com/114566387/233986513-72bab621-a4c3-45a5-971f-0b61960ca87d.png)
+
+Login page:
+
+![image](https://user-images.githubusercontent.com/114566387/233986653-d640ee7d-98f0-475b-95a7-9fd44e0bb51d.png)
 
 
 Home page:
@@ -47,6 +57,14 @@ Video Demonstration on how the website Looks and works:
 
 
 (Note in the booking section while choosing the dates the calendar menue didn't show)
+
+
+Signup & Login Process:
+
+
+
+https://user-images.githubusercontent.com/114566387/233986839-21694fdb-d994-4e64-b444-6d965180d2e2.mp4
+
 
 
 Home page preview:
