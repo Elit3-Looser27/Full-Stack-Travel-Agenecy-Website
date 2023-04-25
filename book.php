@@ -1,10 +1,16 @@
 <?php
 
+// Database connection details
+
 $db_name = 'mysql:host=localhost;dbname=book_db';
 $db_user_name = 'root';
 $db_user_pass = '';
 
+// Connect to the database using PDO
+
 $conn = new PDO($db_name, $db_user_name, $db_user_pass);
+
+// Function to generate a unique ID for each booking
 
 function create_unique_id(){
    $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
@@ -15,6 +21,8 @@ function create_unique_id(){
    }
    return $random_string;
 }
+
+// Check if the form has been submitted
 
 if(isset($_POST['send'])){
 
@@ -28,9 +36,13 @@ if(isset($_POST['send'])){
    $arrivals = $_POST['arrivals'];
    $leaving = $_POST['leaving'];
 
+   // Insert the form data into the database using a prepared statement
+
    $insert_book = $conn->prepare("INSERT INTO `book_form`(id, name, email, phone, address, location, guests, arrivals, leaving) VALUES(?,?,?,?,?,?,?,?,?)");
    $insert_book->execute([$id, $name, $email, $phone, $address, $location, $guests, $arrivals, $leaving]);
 
+    // Add a success message to an array
+    
    $success_msg[] = 'booked successfully!'; 
 
 }

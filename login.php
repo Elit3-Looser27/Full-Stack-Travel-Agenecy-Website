@@ -1,5 +1,10 @@
 <?php
 
+
+// checking if the request method is POST and if so, it connects to the database and checks if a user with the email entered in the form exists. 
+// If a user with that email is found, it checks if the password entered in the form matches the password hash of the user in the database. 
+// If the passwords match, a new session is started and the user ID is stored in the session variable "user_id".
+
 $is_invalid = false;
 
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
@@ -28,11 +33,13 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             exit;
         }
     }
-    
+    // If the email or password is invalid, the variable $is_invalid is set to true.
+
     $is_invalid = true;
 }
 
 ?>
+
 <!DOCTYPE html>
 <html>
 <head>

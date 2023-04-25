@@ -1,5 +1,7 @@
 <?php
 
+//// Validate the form data
+
 if (empty($_POST["name"])) {
     die("Name is required");
 }
@@ -24,9 +26,15 @@ if ($_POST["password"] !== $_POST["password_confirmation"]) {
     die("Passwords must match");
 }
 
+//// Hash the password
+
 $password_hash = password_hash($_POST["password"], PASSWORD_DEFAULT);
 
+// Connect to the database
+
 $mysqli = require __DIR__ . "/database.php";
+
+// Prepare the SQL statement
 
 $sql = "INSERT INTO user (name, email, password_hash)
         VALUES (?, ?, ?)";
@@ -37,10 +45,14 @@ if ( ! $stmt->prepare($sql)) {
     die("SQL error: " . $mysqli->error);
 }
 
+// Bind the form data to the statement parameters
+
 $stmt->bind_param("sss",
                   $_POST["name"],
                   $_POST["email"],
                   $password_hash);
+
+// Execute the statement and handle any errors
                   
 if ($stmt->execute()) {
 

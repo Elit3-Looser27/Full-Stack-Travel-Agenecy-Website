@@ -130,8 +130,8 @@
                <i class="fas fa-star"></i>
                <i class="fas fa-star"></i>
             </div>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus recusandae cum quibusdam odio dignissimos nemo?</p>
-            <h3>john deo</h3>
+            <p>"I had the most amazing experience booking my vacation through this travel agency. The agent was incredibly knowledgeable and helped me plan a trip that exceeded my expectations. I would definitely recommend this agency to anyone looking to plan a memorable vacation."</p>
+            <h3>Veronica Carlos</h3>
             <span>traveler</span>
             <img src="images/pic-4.png" alt="">
          </div>
@@ -142,8 +142,8 @@
                <i class="fas fa-star"></i>
                <i class="fas fa-star"></i>
             </div>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus facilis laudantium magnam saepe magni ullam possimus laborum voluptas, veniam ipsum officiis quae doloribus minima ut quis. Molestiae qui distinctio possimus?</p>
-            <h3>john deo</h3>
+            <p>"I had some specific requirements for my travel plans, and the team at this agency went above and beyond to accommodate my requests. They were prompt, professional, and made the entire process stress-free. I will definitely use this agency again in the future."</p>
+            <h3>Khaled Nasr</h3>
             <span>traveler</span>
             <img src="images/pic-5.png" alt="">
          </div>
@@ -155,8 +155,8 @@
                <i class="fas fa-star"></i>
                <i class="fas fa-star"></i>
             </div>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus facilis laudantium magnam saepe magni ullam possimus laborum voluptas, veniam ipsum officiis quae doloribus minima ut quis. Molestiae qui distinctio possimus?</p>
-            <h3>john deo</h3>
+            <p>"I recently returned from a trip that I booked through this travel agency, and I have to say it was one of the best vacations I've ever had. The attention to detail and personalized service I received was exceptional. The itinerary was perfectly tailored to my interests, and I felt like every aspect of the trip was taken care of. I highly recommend this agency to anyone looking for a top-notch travel experience."</p>
+            <h3>Kimiko Kamado</h3>
             <span>traveler</span>
             <img src="images/pic-6.png" alt="">
          </div>
