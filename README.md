@@ -99,3 +99,17 @@ https://stackoverflow.com/
 https://www.geeksforgeeks.org/
 
 https://www.php.net/
+
+https://cdnjs.com/ 
+
+https://www.freecodecamp.org/news/crud-operations-explained/ 
+
+https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction 
+
+https://www.codingninjas.com/codestudio/library/what-is-truncation-in-java 
+
+https://swiperjs.com/ 
+
+https://www.w3schools.com/php/php_superglobals.asp#:~:text=Some%20predefined%20variables%20in%20PHP,%24GLOBALS 
+
+
